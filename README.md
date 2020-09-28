@@ -1,35 +1,34 @@
 # GameOfLife
 
 ## About
-  Реализация игры ["Жизнь"](https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%AB%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%C2%BB) Джона Конвэя
+  implementation of the game ["Life"](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
-### Запуск
+### Run the project
 
          python3 game.py --file file_name
 
-Где file_name это путь к файлу, в котором содержатся начальные условия игры.
-В репозитории представлены два примера: slider.txt и space.txt, можно использовать их либо создать свои стартовые условия.
+file_name is the path to the file containing the initial game data.
+the repository contain two examples: slider.txt and space.txt. You can use them or create your own.
 
-### Создание начальных условий
-  В каждую строку файла записываютcя координаты формата: 
+### Creating initial data
+  The coordinates of the cell with life are recorded in each line of the file: 
   
          x y
 
-  где x - номер столбца, а y - номер строки, а точка [x][y] клетка с жизнью.
-  Затем путь к файлу передается в виде аргумента.
+  x - column number, y - line number
   
-### Аргументы
-  Пользователь может изменять аргументы поля:
+### Arguments
+  User can change field settings:
 
          python3 game.py --file file_name --width 800 --height 600 --cell 9 --game_speed 5
         
-  width - ширина игрового поля (в пикселях)
+  width - width of the playing field
   
-  height - высота игрового поля (в пикселях)
+  height - height of the playing field
   
-  сell - размер стороны клетки (в пикселях)
+  сell - size of the cell
   
-  game_speed - cкорость игры
+  game_speed - speed of the game
   
 ### Requirements
 * python 3
